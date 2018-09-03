@@ -4,48 +4,40 @@
   <meta charset="UTF-8">
   <meta name="description" content="Item Recommendation">
   <meta name="author" content="Yiyu Pan">
-  <title>Item Recommendation Final</title>
+  <title>Item Recommendation</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  
   <header class="top-header">
-    <nav class="top-nav">
-      <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
+    <i class="avatar fa fa-user fa-2x"></i>
+    <nav class = "top-nav">
+      <a href = "#">Home</a>
+      <a href = "#">Contact</a>
+      <a href = "#">About</a>
     </nav>
-    <span id="welcome-msg"></span>
-    <a id="logout-link" href="logout">Logout</a>
-    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
   </header>
   
-  <div class="container">
+  <section class="container">
+    
     <header>
       <p>
-        <span>Item</span>
-        <br /> Recommendation
+        <span>Event</span>
+        <br/> Recomendation
       </p>
     </header>
-
-    <section class="main-section">
-	    <div id="login-form">
-	 	    <label for="username">Username:</label>
-	 	    <input id="username" name="username" type="text">
-	 	    <label for="password">Password:</label>
-	 	    <input id="password" name="password" type="password">
-	 	    <button id="login-btn">Login</button>
-	 	    <p id="login-error"></p>
-	 	</div>
     
-      <aside id="item-nav">
+    <div class="main-section">
+      
+      <aside>
         <div class="nav-icon">
-          <i class="fa fa-sitemap fa-2x"></i>
+          <i class="fa fa-yelp fa-2x"></i>
         </div>
         <nav class="main-nav">
-          <a href="#" id="nearby-btn" class="main-nav-btn active">
-            <i class="fa fa-map-marker"></i> Nearby
+          <a href="#" id="search-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Search Nearby
           </a>
           <a href="#" id="fav-btn" class="main-nav-btn">
             <i class="fa fa-heart"></i> My Favorites
@@ -55,45 +47,62 @@
           </a>
         </nav>
       </aside>
-
-      <ul id="item-list">
-        <li class="item">
-          <img alt="item image" src="http://www.scot-reman.ac.uk/wp-content/uploads/2018/01/events_medium.jpg" />
-          <div>
-            <a class="item-name" href="#">Item</a>
-            <p class="item-category">Vegetarian</p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
+      
+      <ul class="event-list">
+        <li class="event">
+        <img alt="event image" src="http://www.scot-reman.ac.uk/wp-content/uploads/2018/01/events_medium.jpg" />
+        <div>
+          <a href="#" class="event-name">Football Game</a>
+          <p class="event-category">Sports</p>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
           </div>
-          <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
-          <div class="fav-link">
-            <i class="fa fa-heart"></i>
-          </div>
+        </div>
+          <p class="event-address">1024 Happy Street<br/>Mountain View<br/> CA</p>
+          <div class="fav-link"><i class="fa fa-heart"></i></div>
         </li>
+        
+        <li class="event">
+        <img alt="event image" src="http://www.scot-reman.ac.uk/wp-content/uploads/2018/01/events_medium.jpg" />
+        <div>
+          <a href="#" class="event-name">Football Game</a>
+          <p class="event-category">Sports</p>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+          <p class="event-address">1024 Happy Street<br/>Mountain View<br/> CA</p>
+          <div class="fav-link"><i class="fa fa-heart"></i></div>
+        </li>
+       
       </ul>
-    </section>
-  </div>
+    </div>
+    
+  </section>
   
   <footer>
+    
     <p class="title">What We Do</p>
-    <p>Discover the right places around</p>
+    <p>"Discover the right place around"</p>
     <ul>
       <li>
         <p><i class="fa fa-map-o fa-2x"></i></p>
-        <p>Mountain View, CA</p>
+        <p>Office, CA</p>
       </li>
       <li>
         <p><i class="fa fa-envelope-o fa-2x"></i></p>
-        <p>hello_my_friend@gmail.com</p>
+        <p>xxx@gmail.com</p>
       </li>
       <li>
         <p><i class="fa fa-phone fa-2x"></i></p>
         <p>+1 800 123 456</p>
       </li>
     </ul>
+    
   </footer>
   
   <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
